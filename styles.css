@@ -18,6 +18,9 @@ body {
   background-image: url("./src/Background\ image.png");
   background-size: contain;
   background-repeat: no-repeat;
+  font-family: 'lato', sans-serif;
+  font-size: 16px;
+  color: #272a31;
 }
 
 .hamburgerBar {
@@ -91,10 +94,6 @@ body {
   right: 35px;
 }
 
-#intro {
-  
-}
-
 h1 {
   font-family: 'cocogooseregular';
   font-weight: bold;
@@ -102,11 +101,26 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: rgb(255 0 0 / 27%);
-  font-size: 70px;
+  font-size: 50px;
   background-size: cover;
   text-align: center;
+  padding-bottom: 8px;
+}
+
+ #titlePets {
+  font-family: 'lato';
+  font-weight: normal;
+  color:#ec5242;
+  font-size: 30px;
+  text-align: inherit;
+}
+
+#introduction {
+  padding: 20px;
+  border: 5px solid white;
+  background-color: #f6f6f6;
 }
 
 section {
-  padding: 30px 2%;
+  padding: 55px 5%;
 }
