@@ -97,10 +97,10 @@ body {
 h1 {
   font-family: 'cocogooseregular';
   font-weight: bold;
-  background-image: url("./src/dogs-running5958302.jpg");
+  background-image: url("./src/pexels-francesco-ungaro-7211201.jpg");
   background-clip: text;
   -webkit-background-clip: text;
-  color: rgb(255 0 0 / 27%);
+  color: rgb(255 0 0 / 51%);
   font-size: 50px;
   background-size: cover;
   text-align: center;
@@ -123,4 +123,68 @@ h1 {
 
 section {
   padding: 55px 5%;
+}
+
+#adoptionProgram {
+  background-image: url("./src/background\ adoption.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#Adoption {
+  color: #f6f6f6;
+  font-family: 'lato', sans-serif;
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ec5242;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.animalName {
+  color: #ec5242;
+}
+
+.programDescription {
+  color: #f6f6f6;
+}
+
+.adoptionButton {
+  font-family: 'lato', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px;
+  color: #fff;
+  margin-top: 12px;
+  background: #ec5242;
+  border: none;
+  transition: all 0.7s;
+  text-decoration: none;
+}
+
+.adoptionButton:hover {
+  background: #fff5e1;
+  border: 1px solid #ec5242;
+  color: #ec5242;
+}
+
+.adoptionButton:active {
+  color: #f4f1f0;
+  background: #ec5242;
+}
+
+.adoptionButton:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+#programsContainer > article {
+background: rgba(255, 255, 255, 0.24);
+padding: 12px 2%;
 }
