@@ -216,3 +216,43 @@ hr {
   align-items: flex-start;
   gap: 12px;
 }
+
+#aboutHappyPets {
+  background-image: url("./src/Background\ image\ about.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#aboutHappyPets > h2 {
+  font-family: 'cocogooseregular';
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 8px;
+  color: #ec5242;
+}
+
+#aboutHappyPets > h3 {
+  font-family: 'lato';
+  font-weight: normal;
+  color:#ec5242;
+  font-size: 30px;
+  text-align: center;
+  }
+
+  .aboutDescription {
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    background-color: white;
+  }
+
+  .contactUs {
+    padding-top: 20px;
+    text-align: center;
+    border: none;
+    background-color: #f1f1f1;
+  }
+
+  .contactUs > a {
+    color: #272a31;
+  }
