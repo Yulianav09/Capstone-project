@@ -200,3 +200,19 @@ hr {
   border-radius: 50%;
   object-fit: fill;
 }
+
+.defendersProfession {
+  color: #ec5242;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.defendersCards > hr {
+  background-color: #d3d3d3;
+}
+
+#defendersContainer > article{
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
