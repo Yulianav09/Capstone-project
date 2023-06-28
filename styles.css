@@ -103,7 +103,7 @@ h1 {
   color: rgb(255 0 0 / 51%);
   font-size: 50px;
   background-size: cover;
-  text-align: center;
+  text-align: inherit;
   padding-bottom: 8px;
 }
 
@@ -127,7 +127,7 @@ section {
 
 #adoptionProgram {
   background-image: url("./src/background\ adoption.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -135,6 +135,7 @@ section {
   color: #f6f6f6;
   font-family: 'lato', sans-serif;
   font-weight: bold;
+  text-align: center;
 }
 
 hr {
@@ -159,13 +160,14 @@ hr {
   font-style: normal;
   font-size: 17px;
   line-height: 24px;
-  padding: 12px;
+  padding: 30px;
   color: #fff;
-  margin-top: 12px;
+  margin: 45px auto;
   background: #ec5242;
   border: none;
   transition: all 0.7s;
   text-decoration: none;
+  display: block;
 }
 
 .adoptionButton:hover {
@@ -185,6 +187,16 @@ hr {
 }
 
 #programsContainer > article {
-background: rgba(255, 255, 255, 0.24);
-padding: 12px 2%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 12px 2%;
+  align-items: center;
+  gap: 15px;
+}
+
+.imgadoptionProgram img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: fill;
 }
