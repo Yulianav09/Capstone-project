@@ -19,12 +19,21 @@ section {
 }
 
 body {
-  background-image: url("./src/Background\ image.png");
+  background-image: url("./src/background\ mobile.png");
   background-size: contain;
-  background-repeat: no-repeat;
   font-family: 'lato', sans-serif;
   font-size: 16px;
   color: #272a31;
+}
+
+#homeLink img {
+  width: 100%;
+}
+
+#homeLink div {
+  background: #fff;
+  padding: 15px;
+  width: 150px;
 }
 
 /* Home Section */
@@ -267,22 +276,17 @@ gap: 30px;
   font-style: normal;
   font-size: 17px;
   line-height: 24px;
-  padding: 30px;
-  color: #fff;
-  margin: 45px auto;
-  background: #ec5242;
-  border: none;
+  padding: 10px;
+  color: #2e2e2e;
+  margin: 39px auto;
+  background: #fff;
+  border: 1px solid #d3d3d3;
   transition: all 0.7s;
   text-decoration: none;
   display: block;
 }
 
 /* About Happy Pets */
-#aboutHappyPets {
-  background-image: url("./src/Background\ image\ about.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 #aboutHappyPets > h2 {
   font-family: 'cocogooseregular';
@@ -404,6 +408,66 @@ background-color: #2e2e2e;
 }
 
 @media only screen and (min-width: 768px) {
+
+  #facebook {
+    width: 9px;
+    height: 18px;
+  }
+
+  #twitter{
+    width: 20px;
+    height: 17px;
+  }
+
+.socialMedia {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 20px;
+  }
+  .socialMedia img {
+    width: 100%;
+  }
+
+  .socialMedia {
+  background-color: #272a31;
+  padding: 5px 11%;
+  align-items: center;
+  }
+
+ .socialMedia li {
+  color: white;
+  font-size: 13px;
+ }
+
+ .navButton {
+  font-family: 'lato', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 5px 15px;
+    color: #ec5242;
+    margin: 1px 10px;
+    border: 5px solid #ec5242;
+    transition: all 0.7s;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+ }
+
+  section {
+    padding: 55px 15%;
+  }
+
+  header{
+    background-color: #fff;
+  }
+  
+  body { 
+    background-image: url("./src/background\ desktop.png");
+  }
+  
   .onlyMobile {
     visibility: hidden;
     display: none !important;
@@ -426,16 +490,34 @@ background-color: #2e2e2e;
     display: flex;
     justify-content:space-between;
     align-items: center;
+    padding: 0  10%;
   }
 
   .navigationLinks {
     display: flex !important;
+    align-items: center;
+    gap: 20px;
   }
 
   .navigationLinks li {
     border: none;
+    padding: 0;
   }
   .navigationLinks li a {
     color: #272a31;
+    font-size: 12px;
+  }
+
+  #titlePets {
+    font-size: 40px;
+  }
+
+  #fundationTitle {
+    font-size: 80px;
+    padding-bottom: 0;
+  }
+
+  #introduction {
+  max-width: 525px;
   }
 }

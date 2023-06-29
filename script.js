@@ -102,6 +102,7 @@ hamburgerContainer.addEventListener('click', () => {
 function closewindow() {
   nav.classList.remove('navMobile');
   navigationLinks.classList.add('onlyDesktop');
+  homeLink.classList.add('onlyDesktop');
   for (let i = 0; i < hamburgerBar.length; i += 1) {
     hamburgerBar[i].classList.remove('hidden');
   }
@@ -109,3 +110,4 @@ function closewindow() {
 }
 
 navigationLinks.addEventListener('click', closewindow);
+homeLink.addEventListener('click', closewindow);
