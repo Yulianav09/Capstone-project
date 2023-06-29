@@ -53,14 +53,14 @@ body {
   display: none;
 }
 
+.onlyDesktop {
+  visibility: hidden;
+  display: none !important;
+}
+
 .navigationLinks li {
   border-bottom: 1px solid #6f6c6b;
   padding: 15px;
-}
-
-.onlyDesktop {
-  visibility: hidden;
-  display: none;
 }
 
 .navigationLinks {
@@ -150,6 +150,9 @@ hr {
   background-color: #ec5242;
   margin-top: 20px;
   margin-bottom: 40px;
+  margin-inline: auto;
+  width: 30px;
+  height: 2px;
 }
 
 .animalName {
@@ -243,12 +246,35 @@ font-size: 13px;
   background-color: #d3d3d3;
   margin-top: 19px;
   margin-bottom: 20px;
+  width: 20px;
+  margin-inline: 0;
 }
 
-#defendersContainer > article{
+#defendersContainer > .speakerContainer{
   display: flex;
   align-items: flex-start;
   gap: 12px;
+}
+
+#defendersContainer {
+display: grid;
+gap: 30px;
+}
+
+.defenderButton {
+  font-family: 'lato', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 30px;
+  color: #fff;
+  margin: 45px auto;
+  background: #ec5242;
+  border: none;
+  transition: all 0.7s;
+  text-decoration: none;
+  display: block;
 }
 
 /* About Happy Pets */
@@ -273,83 +299,91 @@ font-size: 13px;
   color:#ec5242;
   font-size: 30px;
   text-align: center;
-  }
-
-  .aboutDescription {
-    padding: 20px;
-    border: 1px solid #d3d3d3;
-    background-color: white;
-  }
-
-  .contactUs {
-    padding-top: 30px;
-    text-align: center;
-    border: none;
-    background-color: #f1f1f1;
-  }
-
-  .contactUs > a {
-    color: #272a31;
-  }
-
-  #eventsHappyPets {
-    background-color: #fff
-  }
-
-  #eventsHappyPets > h2 {
-    text-align: center;
-  }
-
-  #eventsHappyPets > p {
-    text-align: center;
-    padding-bottom: 40px;
-    font-size: 14px;
-  }
-
-  .imgEvents {
-    border: 1px solid #d3d3d3;
-    padding: 20px;
-  }
-
-  .imgEvents > img {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-  }
-
-  /* News */
-
-  #newsHappyPets {
-    background-color: white;
-    border-top: 1px solid #d3d3d3;
-  }
-
-  #News {
-    text-align: center;
-  }
-
-  #newsInfo > hr {
-    margin-top: 13px;
-    margin-bottom: 13px;
 }
 
-  #updates {
-    text-align: center;
-    padding-bottom: 35px;
-  }
+.aboutDescription {
+  padding: 20px;
+  border: 1px solid #d3d3d3;
+  background-color: white;
+}
 
-  #newsContainer {
+.contactUs {
+  padding-top: 30px;
+  text-align: center;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+.contactUs > a {
+  color: #272a31;
+}
+
+#eventsHappyPets {
+  background-color: #fff
+}
+
+#eventsHappyPets > h2 {
+  text-align: center;
+}
+
+#eventsHappyPets > p {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 14px;
+}
+
+.imgEvents {
+  border: 1px solid #d3d3d3;
+  padding: 20px;
+}
+
+.imgEvents > img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* News */
+
+#newsHappyPets {
+  background-color: white;
+  border-top: 1px solid #d3d3d3;
+}
+
+#News {
+  text-align: center;
+}
+
+#newsInfo > hr {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+#updates {
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+#newsContainer {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  }
+}
 
 #newsContainer > article {
-    background-image: url(./src/timoteo.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding: 85px;
-    height: 55vw;
+  background-image: url(./src/timoteo.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 55vw;
+}
+.newsCards {
+  width: 100%;
+  height: 100%;
+  padding: 45px;
+  background-color: rgba(255, 0, 0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .newsCards > h3 {
@@ -363,4 +397,45 @@ font-size: 13px;
   font-size: 15px;
   color: white;
   text-align: center;
+}
+
+#sponsorsHappyPets {
+background-color: #2e2e2e;
+}
+
+@media only screen and (min-width: 768px) {
+  .onlyMobile {
+    visibility: hidden;
+    display: none !important;
+  }
+
+  .onlyDesktop {
+    visibility: visible;
+    display: initial !important;
+  }
+  
+  #defendersContainer > .speakerContainer{
+    display: flex !important;
+  }
+
+  #defendersContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+
+  .navigationLinks {
+    display: flex !important;
+  }
+
+  .navigationLinks li {
+    border: none;
+  }
+  .navigationLinks li a {
+    color: #272a31;
+  }
 }

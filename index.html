@@ -11,16 +11,17 @@
   <!-- Navbar and menu Section -->
   <header>
     <nav>
-    <div  class="mobileVersion" id="hamburgerContainer">
-      <div class="hamburgerBar">&nbsp;</div>
-      <div class="hamburgerBar">&nbsp;</div>
-      <div class="hamburgerBar">&nbsp;</div>
-      <div id="closebutton" class="hidden"><img src="./src/Icon - Cancel.svg" alt="close button"></div>
-    </div>
-    <ul class="onlyDesktop navigationLinks">
-    <!-- <ul class="navigationLinks"> -->
+      <a href="#" id="homeLink" class="onlyDesktop"><img src="./src/Icon Email.svg" alt="page logo"></a>
+      <div  class="onlyMobile" id="hamburgerContainer">
+        <div class="hamburgerBar">&nbsp;</div>
+        <div class="hamburgerBar">&nbsp;</div>
+        <div class="hamburgerBar">&nbsp;</div>
+        <div id="closebutton" class="hidden"><img src="./src/Icon - Cancel.svg" alt="close button"></div>
+      </div>
+      <ul class="onlyDesktop navigationLinks">
+        <!-- <ul class="navigationLinks"> -->
       <li>
-      <a href="#aboutHappyPets">About</a>
+      <a href="#aboutHappyPets" id="aboutLink">About</a>
       </li>
       <li>        
       <a href="#adoptionProgram">Adoptions</a>
@@ -81,19 +82,11 @@
         <h2 id="defenders">Featured Speakers</h2>
         <hr>
       </div>
-      <div id="defendersContainer">
-        <article>
-          <div class="imgdefender"><img src="./src/Juan carlos.png" alt="Animal Defender 1"></div>
-          <div class="defendersCards">
-            <h3>Juan Carlos Martínez</h3>
-            <p class="defendersProfession"> He is the founder and director of the organization Animal Defenders International (ADI) in Colombia.</p>
-            <hr>
-            <p class="desfenderDescription">Martinez dedicates to combating the use of animals in shows and promoting animal protection laws.</p>
-          </div>
-        </article>
+      <div id="defendersContainer"></div>
+      <button class="defenderButton onlyMobile">more</button>
    </section> 
    </main>
-   <main id="about">
+   <main id="about" class="hidden">
    <!-- About Happy Pets -->
    <section id="aboutHappyPets">
     <h3>About!!</h3>
@@ -143,13 +136,12 @@
           </p>
         </div>
       </article>
- </section> 
-  </main>
+ </section>
   <!-- Sponsor -->
   <section id="sponsorsHappyPets">
     <h2 id="Sponsors">Sponsors</h2>
     <hr>
-     <div class="imgNews"><img src="" alt="Animal News 1"></div>
+     <div class="imgNews"><img src="./src/Logo-Agility-Gold-Prescrito-N.png" alt="Animal News 1"></div>
      <div class="imgNews"><img src="" alt="Animal News 1"></div>
      <div class="imgNews"><img src="" alt="Animal News 1"></div>
      <div class="imgNews"><img src="" alt="Animal News 1"></div>
