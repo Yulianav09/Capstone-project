@@ -14,6 +14,10 @@
   padding: 0;
 }
 
+section {
+  padding: 55px 5%;
+}
+
 body {
   background-image: url("./src/Background\ image.png");
   background-size: contain;
@@ -22,6 +26,8 @@ body {
   font-size: 16px;
   color: #272a31;
 }
+
+/* Home Section */
 
 .hamburgerBar {
   background-color: #4b5160;
@@ -119,11 +125,10 @@ h1 {
   padding: 20px;
   border: 5px solid white;
   background-color: #f6f6f6;
+  margin-bottom: 100px;
 }
 
-section {
-  padding: 55px 5%;
-}
+/* Adoption Program */
 
 #adoptionProgram {
   background-image: url("./src/background\ adoption.png");
@@ -136,6 +141,7 @@ section {
   font-family: 'lato', sans-serif;
   font-weight: bold;
   text-align: center;
+  font-size: 20px;
 }
 
 hr {
@@ -188,7 +194,7 @@ hr {
 
 #programsContainer > article {
   display: flex;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgb(255 255 255 / 11%);
   padding: 12px 2%;
   align-items: center;
   gap: 15px;
@@ -200,6 +206,8 @@ hr {
   border-radius: 50%;
   object-fit: fill;
 }
+
+/* Featured Speakers */
 
 #featuredSpeakers {
 background-color: #fff;
@@ -243,6 +251,7 @@ font-size: 13px;
   gap: 12px;
 }
 
+/* About Happy Pets */
 #aboutHappyPets {
   background-image: url("./src/Background\ image\ about.png");
   background-size: cover;
@@ -273,7 +282,7 @@ font-size: 13px;
   }
 
   .contactUs {
-    padding-top: 20px;
+    padding-top: 30px;
     text-align: center;
     border: none;
     background-color: #f1f1f1;
@@ -282,3 +291,76 @@ font-size: 13px;
   .contactUs > a {
     color: #272a31;
   }
+
+  #eventsHappyPets {
+    background-color: #fff
+  }
+
+  #eventsHappyPets > h2 {
+    text-align: center;
+  }
+
+  #eventsHappyPets > p {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 14px;
+  }
+
+  .imgEvents {
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+  }
+
+  .imgEvents > img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* News */
+
+  #newsHappyPets {
+    background-color: white;
+    border-top: 1px solid #d3d3d3;
+  }
+
+  #News {
+    text-align: center;
+  }
+
+  #newsInfo > hr {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+  #updates {
+    text-align: center;
+    padding-bottom: 35px;
+  }
+
+  #newsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+
+#newsContainer > article {
+    background-image: url(./src/timoteo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 85px;
+    height: 55vw;
+}
+
+.newsCards > h3 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.newsCards > p {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
