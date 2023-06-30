@@ -47,6 +47,7 @@ const homeLink = document.querySelector('.homeLink');
 const aboutLink = document.querySelector('#aboutLink');
 const home = document.querySelector('#home');
 const about = document.querySelector('#about');
+const footer = document.querySelector('#footer');
 
 featuredSpeakers.forEach((speaker, index) => {
   const speakerCard = document.createElement('article');
@@ -71,11 +72,13 @@ defenderButton.addEventListener('click', () => {
 
 homeLink.addEventListener('click', () => {
   home.classList.remove('hidden');
+  footer.classList.remove('darkBG');
   about.classList.add('hidden');
 });
 aboutLink.addEventListener('click', () => {
   home.classList.add('hidden');
   about.classList.remove('hidden');
+  footer.classList.add('darkBG');
 });
 
 hamburgerContainer.addEventListener('click', () => {

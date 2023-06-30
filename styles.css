@@ -27,6 +27,11 @@ body {
   color: #272a31;
 }
 
+.darkBG {
+  background-color: #272a31;
+  color: #fff;
+}
+
 .homeLink img {
   width: 100%;
 }
@@ -137,7 +142,7 @@ h1 {
   padding: 20px;
   border: 5px solid white;
   background-color: #f6f6f6;
-  margin-bottom: 100px;
+  margin-bottom: 15px;
 }
 
 /* Adoption Program */
@@ -449,11 +454,30 @@ hr {
 footer {
   padding: 20px 5%;
   background-color: white;
-  display: flex;
+  display: flex !important;
   gap: 30px;
 }
 
+#date {
+  font-size: 30px;
+  font-weight: 900;
+  color: #60646f;
+}
+
+#place {
+  color: #60646f;
+  margin-bottom: 20px;
+}
+
 @media only screen and (min-width: 768px) {
+  #date {
+    font-size: 35px;
+  }
+
+  #place {
+    margin-bottom: 50px;
+  }
+
   #facebook {
     width: 9px;
     height: 18px;
@@ -563,6 +587,7 @@ footer {
 
   #introduction {
     max-width: 525px;
+    margin-bottom: 30px;
   }
 
   #newsContainer > article {
@@ -607,5 +632,6 @@ footer {
 
   footer {
     padding: 40px 15%;
+    display: flex !important;
   }
 }
