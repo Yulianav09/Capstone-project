@@ -15,7 +15,6 @@
   - [Prerequisites](#prerequisites)
   - [Install](#install)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -23,9 +22,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Portfolio <a name="about-project"></a>
+# 📖 Capstone <a name="about-project"></a>
 
-**Portfolio** is a project to showcase my most relevant projects
+**Capstone** is a project to showcase my skills developing with pages
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -36,6 +35,7 @@
   <ul>
     <li>HTML</li>
     <li>CSS</li>
+    <li>JAVASCRIPT</li>
   </ul>
 </details>
 
@@ -50,7 +50,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yulianav09.github.io/Portfolio/)
+- [Live Demo Link](https://yulianav09.github.io/Capstone-project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,16 +98,6 @@ Install this project with:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **Add Desktop version**
-- [ ] **Add list of projects**
-- [ ] **Add interactivity with JavaScript**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -130,7 +120,7 @@ If you like this project please consider watch and give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my parthers of this week that help me with basic topics.
+I would like to thank Cindy Shin for the original design idea.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
