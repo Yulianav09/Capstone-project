@@ -26,11 +26,11 @@ body {
   color: #272a31;
 }
 
-#homeLink img {
+.homeLink img {
   width: 100%;
 }
 
-#homeLink div {
+.homeLink div {
   background: #fff;
   padding: 15px;
   width: 150px;
@@ -204,12 +204,20 @@ hr {
   color: #5b5957;
 }
 
+#programsContainer {
+  display: grid;
+  gap: 12px;
+  justify-content: center;
+}
+
 #programsContainer > article {
-  display: flex;
+  display: grid;
+  grid-template-columns: 80px 80px 1fr;
   background: rgb(255 255 255 / 11%);
   padding: 12px 2%;
   align-items: center;
   gap: 15px;
+  max-width: 400px;
 }
 
 .imgadoptionProgram img {
@@ -230,7 +238,7 @@ background-color: #fff;
 }
 
 .imgdefender > img {
-  width: 165px;
+  width: 120px;
 }
 
 .defendersProfession {
@@ -284,6 +292,8 @@ gap: 30px;
   transition: all 0.7s;
   text-decoration: none;
   display: block;
+  width: 100%;
+  max-width: 400px;
 }
 
 /* About Happy Pets */
@@ -375,11 +385,19 @@ gap: 30px;
 }
 
 #newsContainer > article {
-  background-image: url(./src/timoteo.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 55vw;
 }
+
+#Timoteo {
+  background-image: url(./src/timoteo.jpg);
+}
+
+#Dorito {
+  background-image: url(./src/dorito.jpg);
+}
+
 .newsCards {
   width: 100%;
   height: 100%;
@@ -403,8 +421,38 @@ gap: 30px;
   text-align: center;
 }
 
+/* Sponsors */
+
 #sponsorsHappyPets {
 background-color: #2e2e2e;
+}
+
+#Sponsors {
+  color: #d3d3d3;
+  text-align: center;
+}
+
+#sponsorContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imgSponsors {
+  width: 120px;
+}
+
+.imgSponsors img {
+  width: 100%;
+}
+
+footer {
+  padding: 20px 5%;
+  background-color: white;
+  display: flex;
+  gap: 30px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -519,5 +567,41 @@ background-color: #2e2e2e;
 
   #introduction {
   max-width: 525px;
+  }
+
+  #programsContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+  }
+  
+  #programsContainer > article {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 15px;
+    gap: 5px;
+  }
+
+  #programsContainer > article:hover {
+    border:2px solid white;
+  }
+
+  .programDescription {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .adoptionButton {
+    background: none;
+    text-decoration: underline;
+  }
+
+  .adoptionButton:hover {
+    background: none;
+    border: none;
+    color: white;
+  }
+
+  footer {
+    padding: 40px 15%;
   }
 }
