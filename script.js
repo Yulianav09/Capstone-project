@@ -35,24 +35,23 @@ const featuredSpeakers = [
     profession: 'oloribus tempora,Lorem ipsum dolor sit, amet consectetur adipisicing elit Ipsum.',
     description: 'consectetur adipisicing elit. Ipsum veritatis quisquam totam, officiis quas, exercitationem.',
     featureImage: './src/Jose Luis 1.png',
-  }]
+  }];
 const hamburgerContainer = document.querySelector('#hamburgerContainer');
 const nav = document.querySelector('nav');
 const navigationLinks = document.querySelector('.navigationLinks');
 const hamburgerBar = document.querySelectorAll('.hamburgerBar');
 const closebutton = document.querySelector('#closebutton');
-const defendersContainer = document.querySelector("#defendersContainer");
-const defenderButton = document.querySelector(".defenderButton");
-const homeLink = document.querySelector(".homeLink");
-const aboutLink = document.querySelector("#aboutLink");
-const home = document.querySelector("#home");
-const about = document.querySelector("#about");
-
+const defendersContainer = document.querySelector('#defendersContainer');
+const defenderButton = document.querySelector('.defenderButton');
+const homeLink = document.querySelector('.homeLink');
+const aboutLink = document.querySelector('#aboutLink');
+const home = document.querySelector('#home');
+const about = document.querySelector('#about');
 
 featuredSpeakers.forEach((speaker, index) => {
-  const speakerCard= document.createElement('article');
-  speakerCard.classList.add('speakerContainer')
-  if (index > 1) speakerCard.classList.add('onlyDesktop')
+  const speakerCard = document.createElement('article');
+  speakerCard.classList.add('speakerContainer');
+  if (index > 1) speakerCard.classList.add('onlyDesktop');
   speakerCard.innerHTML = `
   <div class="imgdefender"><img src="${speaker.featureImage}" alt="Animal Defender 1"></div>
   <div class="defendersCards">
@@ -60,24 +59,24 @@ featuredSpeakers.forEach((speaker, index) => {
     <p class="defendersProfession">${speaker.profession}</p>
     <hr>
     <p class="desfenderDescription">${speaker.description}</p>
-  </div>`
+  </div>`;
   defendersContainer.appendChild(speakerCard);
-} )
+});
 
-const hiddenCards = document.querySelectorAll(".speakerContainer.onlyDesktop")
+const hiddenCards = document.querySelectorAll('.speakerContainer.onlyDesktop');
 
 defenderButton.addEventListener('click', () => {
-  hiddenCards.forEach(element => {element.classList.toggle("onlyDesktop")})
-})
+  hiddenCards.forEach((element) => { element.classList.toggle('onlyDesktop'); });
+});
 
 homeLink.addEventListener('click', () => {
-  home.classList.remove('hidden')
-  about.classList.add('hidden')
-})
+  home.classList.remove('hidden');
+  about.classList.add('hidden');
+});
 aboutLink.addEventListener('click', () => {
-  home.classList.add('hidden')
-  about.classList.remove('hidden')
-})
+  home.classList.add('hidden');
+  about.classList.remove('hidden');
+});
 
 hamburgerContainer.addEventListener('click', () => {
   if (navigationLinks.classList.contains('onlyDesktop')) {
