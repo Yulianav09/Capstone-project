@@ -565,6 +565,10 @@ footer {
     max-width: 525px;
   }
 
+  #newsContainer > article {
+    height: 26vw;
+  }
+
   #programsContainer {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 5px;
@@ -595,6 +599,10 @@ footer {
     background: none;
     border: none;
     color: white;
+  }
+
+  #newsContainer {
+    flex-direction: row;
   }
 
   footer {
